@@ -1,0 +1,41 @@
+{
+  "name": "@y0exchange/mcp",
+  "version": "0.2.0",
+  "description": "MCP server for AI-to-Blockchain interactions — read balances, execute swaps, manage portfolios",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "y0-mcp": "./dist/index.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "start": "node dist/index.js",
+    "start:remote": "node dist/remote.js",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.0",
+    "@y0exchange/shared": "workspace:*",
+    "express": "^4.21.0",
+    "viem": "^2.21.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.7.0"
+  }
+}
