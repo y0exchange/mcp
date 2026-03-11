@@ -255,9 +255,9 @@ The MCP server gives Claude access to DeFi tools. The **y0 DeFi Skill** teaches 
 ### Install the skill
 
 **Claude.ai:**
-1. Download the `skill/` folder from this repo (or [download ZIP](https://github.com/y0exchange/mcp/tree/main/skill))
+1. [Download skill.zip](https://github.com/y0exchange/mcp/raw/main/skill.zip)
 2. Go to **Settings → Capabilities → Skills**
-3. Click **Upload skill** and select the zipped `skill/` folder
+3. Click **Upload skill** and select the downloaded `skill.zip`
 4. Make sure your y0 MCP connector is also connected
 
 **Claude Code:**
